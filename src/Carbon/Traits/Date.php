@@ -1409,7 +1409,7 @@ trait Date
      *
      * @return static
      */
-    public function setDaysFromStartOfWeek(int $numberOfDays, int $weekStartsAt = null)
+    public function setDaysFromStartOfWeek(int $numberOfDays, ?int $weekStartsAt = null)
     {
         return $this->addDays($numberOfDays - $this->getDaysFromStartOfWeek($weekStartsAt));
     }
